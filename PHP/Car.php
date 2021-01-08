@@ -1,15 +1,18 @@
+<?php
+require_once('account.php');
 class Car{
     public $id;
     public $license;
     public $driver;
     public $passenger;
 
-    publicfunction__construct($license, $driver){
+    public function __construct($license, $driver){
         $this->license = $license;
         $this->driver = $driver;
     }
 
-    publicfunctionPrintDataCar(){
-        echo"License: $this->license, conductor:{$this->driver->name}, document: {$this->driver->document}";
+    public function PrintDataCar(){
+        echo"License: $this->license Driver: ".$this->driver->name;
     }
 }
+?>
