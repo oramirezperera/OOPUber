@@ -6,6 +6,5 @@ class UberX extends Car {
         super(license, driver);
         this.brand = brand;
         this.model = model;
-        
     }
 }
