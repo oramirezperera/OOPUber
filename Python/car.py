@@ -1,6 +1,10 @@
+from account import Account
 class Car:
-    def __init__(self, id, license, driver, passenger):
-        self.id         = int
-        self.license    = str
-        self.driver     = str
-        self.passenger  = int
+    id          = int
+    license     = str
+    driver      = Account("","")
+    passenger   = int
+
+    def __init__(self, license, driver):
+        self.license    = license
+        self.driver     = driver
